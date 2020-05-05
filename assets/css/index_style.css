@@ -4,7 +4,7 @@
 
 .main-body .main-body-content {
     height: 90%;
-    padding: 20px 100px 0px;
+    padding: 0px 100px 0px;
     overflow-y: scroll;
 }
 
@@ -32,7 +32,7 @@ footer{
     color: #fff;
     width: inherit;
     padding-left: 15px;
-    height:220px;
+    height:195px;
     
 }
 
@@ -42,7 +42,7 @@ footer{
 }
 
 h5 {
-    padding: 15px 0px;
+    padding: 1px 0px;
 }
 
 .social li {
