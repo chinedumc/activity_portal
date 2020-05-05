@@ -59,20 +59,22 @@
                     
                 </div>
                 <form>
-                    <div class="form-group">
-                        <label for="selectIndustry">Unit </label><label style="color: brown;">  &nbsp;*</label>
-                        <select class="form-control" id="selectUnit">
-                        <option>Branch Conduct and Compliance Monitoring</option>
-                        <option>Regulatory and Law Enforcement Agencies</option>
-                        <option>Non-Interest Banking Compliance</option>
-                        <option>Transition Monitoring</option>
-                        <option>Regulatory Compliance</option>
-                        <option>Anti-Fraud Desk</option>
-                        <option>Technology and Digital Compliance</option>
-                        <option>Other SBU Monitoring</option>
-                        <option>Business Compliance</option>
-                        </select>
-                    </div> 
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="selectIndustry">Unit </label><label style="color: brown;">  &nbsp;*</label>
+                            <select class="form-control" id="selectUnit">
+                            <option>Branch Conduct and Compliance Monitoring</option>
+                            <option>Regulatory and Law Enforcement Agencies</option>
+                            <option>Non-Interest Banking Compliance</option>
+                            <option>Transition Monitoring</option>
+                            <option>Regulatory Compliance</option>
+                            <option>Anti-Fraud Desk</option>
+                            <option>Technology and Digital Compliance</option>
+                            <option>Other SBU Monitoring</option>
+                            <option>Business Compliance</option>
+                            </select>
+                        </div> 
+                    </div>
                     <div class="row">
                         <div class="col-md-3">
                             <div class="form-group">
@@ -126,20 +128,50 @@
                             </select>
                         </div>
                         <div class="col-md-2 form-group">
-                            <label for="startyear">&emsp;</label>
+                            <label for="reportyear">&emsp;</label>
                         <select class="form-control" id="year">
                             <option>Year</option>
                             <option>2020</option>
-                            <option>2019</option>
-                            <option>2018</option>
+                            <option>2021</option>
+                            <option>2022</option>
                         </select>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="observationText">Observation </label><label style="color: brown;">  &nbsp;*</label>
+                            <textarea class="form-control" id="observationText" rows="2"></textarea>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="descriptonText">Description </label><label style="color: brown;">  &nbsp;*</label>
+                            <textarea class="form-control" id="descriptionText" rows="2"></textarea>
+                        </div>                          
+                    </div>    
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <label for="actionText">Action Taken </label><label style="color: brown;">  &nbsp;*</label>
+                            <textarea class="form-control" id="actionText" rows="1"></textarea>
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <label for="descriptonText">Status </label><label style="color: brown;">  &nbsp;*</label>
+                            <select class="form-control" id="year">
+                                <option>Resolved</option>
+                                <option>Unresolved</option>
+                                <option>No Action</option>                                
+                            </select>
+                        </div>                          
+                    </div>    
+                    <div class="button-group">
+                        <a class="btn btn-big btn-primary" href="#" >Save For Later</a>
+                    </div> 
                 </form>
             </div>      
             <div class="button-group">
                 <a class="btn btn-big btn-primary" href="#" >Submit</a>
-            </div>
+            </div>    
+                               
+                            
+                        
             
 
         </div>
@@ -196,6 +228,7 @@
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
+    
     
     
 </body>
