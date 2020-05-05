@@ -1,10 +1,38 @@
+.main-body {
+   height: 380px;
+}
+
+.main-body .main-body-content {
+    height: 90%;
+    padding: 20px 100px 0px;
+    overflow-y: scroll;
+}
+
+.main-content .page-title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+}
+
+/* .main-content .table .table-content {
+    height: 90%;
+    overflow-y: scroll;
+} */
+
+.table.sticky th {
+    position: sticky;
+    top: 0;
+}
+
 footer{
     background-color: brown;
     position: inherit;
     color: #fff;
     width: inherit;
     padding-left: 15px;
-    height:270px;
+    height:220px;
     
 }
 
