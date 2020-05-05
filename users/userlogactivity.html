@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Activity Log Page</title>
+    <link rel="shortcut icon" type="image/png" href="../assets/images/fav-sterling-logo.png"> 
+    <link rel="stylesheet" href="../assets/css/index_style.css">
+    <link rel="stylesheet" href="../assets/css/userlogactivity.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Inter|Roboto:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="jquery.datetimepicker.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a6eae61af6.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <!-- Nav Bar starts -->
+        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/images/sterling-logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Activity Portal
+              </a>
+
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Welcome {User}</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="#">Search</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Log An Activity</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Logout</a>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+
+        </nav>
+        <!-- nav bar ends -->
+
+        <!--main body starts -->
+        <div class="main-body">
+            <div class="main-body-content">
+                <div class="main-content">
+                    <h2 class="page-title">Log A New Activity</h2>
+                    
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="selectIndustry">Unit </label><label style="color: brown;">  &nbsp;*</label>
+                        <select class="form-control" id="selectUnit">
+                        <option>Branch Conduct and Compliance Monitoring</option>
+                        <option>Regulatory and Law Enforcement Agencies</option>
+                        <option>Non-Interest Banking Compliance</option>
+                        <option>Transition Monitoring</option>
+                        <option>Regulatory Compliance</option>
+                        <option>Anti-Fraud Desk</option>
+                        <option>Technology and Digital Compliance</option>
+                        <option>Other SBU Monitoring</option>
+                        <option>Business Compliance</option>
+                        </select>
+                    </div> 
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="selectIndustry"> Activity Type </label><label style="color: brown;">  &nbsp;*</label>
+                                <select class="form-control" id="selectUnit">
+                                    <option>Lorem ipsum dolor sit amet.</option>
+                                    <option>Lorem ipsum dolor sit amet.</option>
+                                    <option>Lorem ipsum dolor sit amet.</option>
+                                    <option>Lorem ipsum dolor sit amet.</option>
+                                    <option>Lorem ipsum dolor sit amet.</option>
+                                </select>
+                            </div> 
+                        </div>
+                        <div class="col-md-2 form-group">
+                            <label for="selectmonth">Activity Date</label><label style="color: brown;">  &nbsp;*</label>
+                            <select class="form-control" id="selectday">
+                                <option>Day</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 form-group">
+                            <label for="activitymonth">&emsp;</label>
+                            <select class="form-control" id="selectmonth">
+                                <option>Month</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2 form-group">
+                            <label for="startyear">&emsp;</label>
+                        <select class="form-control" id="year">
+                            <option>Year</option>
+                            <option>2020</option>
+                            <option>2019</option>
+                            <option>2018</option>
+                        </select>
+                        </div>
+                    </div>
+                </form>
+            </div>      
+            <div class="button-group">
+                <a class="btn btn-big btn-primary" href="#" >Submit</a>
+            </div>
+            
+
+        </div>
+        <!-- // main body ends -->
+
+        <!-- Footer starts -->
+        <footer>
+            <div class="mt-2 pt-2 pb-5 footer">
+                <div class="row">
+                    <div class="col-lg-5 col-xs-12">
+                         <h5>Activity Portal</h5>
+                         <p class="pr-5 text-white-50">
+                             The Activity Portal...lorem ipsum dolor sit amet.
+                             lorem ipsum dolor sit amet.lorem ipsum dolor sit amet.
+                         </p>              
+                         <ul class="social">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-xs-12 links">
+                        <h5 class="mt-lg-0 mt-sm-3">Quick Links</h6>
+                        <ul class="m-0 p-0">
+                            <li><a href="#">loremipsum</a></li>
+                            <li><a href="#">loremipsum</a></li>
+                            <li><a href="#">loremipsum</a></li>
+                            <li><a href="#">loremipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-xs-12 location">
+                        <h5 class="mt-lg-0 mt-sm-4">Contact Us</h5>
+                        <p><i class="fa fa-map-marker"> Sterling Towers, 20 Marina, Lagos.</i></p>
+                        <p><i class="fa fa-phone"> +234(0)14484481-5</i></p>
+                        <p><i class="fa fa-envelope-o"> activityportal@sterling.ng</i></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col copyright text-center">
+                        <p><small class="text-white-50">
+                            All Rights Reserved &copy; Nedum-STAC 2020
+                        </small></p>
+                    </div>
+                </div>   
+            </div>
+        </footer> 
+        <!-- // Footer ends -->
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    
+    
+</body>
+</html>    
+        
+
+
+
+
+
+
+        
+                                
+                        
+                            
+                        
+                        
+                    
+                    
+                
+
+
+
+          
+        
+
+
+
+
+    
