@@ -16,13 +16,6 @@
     top: 0;
 }
 
-
-
-/* .main-content .table .table-content {
-    height: 90%;
-    overflow-y: scroll;
-} */
-
 .table.sticky th {
     position: sticky;
     top: 0;
