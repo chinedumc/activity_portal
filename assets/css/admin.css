@@ -1,8 +1,25 @@
 .main-body .main-body-content {
     padding: 0px 50px;
+    font-size: 0.8rem;
 }
 
 .main-content .top-search {
-    padding: 3px 50px 5px 100px;
+    padding: 3px 50px 5px;
 }
 
+.top-search .form-control {
+    font-size: 0.8rem;
+}
+
+.top-search .input-daterange input {
+    text-align: left;
+}
+
+.top-search .btn {
+    font-size: 0.8rem;
+
+}
+
+.table .form-control  {
+    font-size: 0.8rem;
+}
