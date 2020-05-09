@@ -7,6 +7,7 @@
     height: 90%;
     padding: 0px 100px 0px;
     overflow-y: scroll;
+    font-size: 0.8rem;
 }
 
 .main-content .page-title {
@@ -15,6 +16,14 @@
     font-weight: bold;
     position: sticky;
     top: 0;
+}
+
+.table .form-control  {
+    font-size: 0.8rem;
+}
+
+.page-title {
+    margin-top: 0.5rem;
 }
 
 .table.sticky th {

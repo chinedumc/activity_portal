@@ -1,10 +1,10 @@
 .main-body .main-body-content {
     padding: 0px 50px;
-    font-size: 0.8rem;
+    
 }
 
 .main-content .top-search {
-    padding: 3px 50px 5px;
+    padding: 3px 0px 5px;
 }
 
 .top-search .form-control {
@@ -17,9 +17,8 @@
 
 .top-search .btn {
     font-size: 0.8rem;
-
+    background: rgb(59, 59, 128);
+    border-color: rgb(59, 59, 128);
 }
 
-.table .form-control  {
-    font-size: 0.8rem;
-}
+

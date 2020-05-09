@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../assets/css/userlogactivity.css">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700|Inter|Roboto:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="jquery.datetimepicker.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" integrity="sha256-siyOpF/pBWUPgIcQi17TLBkjvNgNQArcmwJB8YvkAgg=" crossorigin="anonymous" />
     <script src="https://kit.fontawesome.com/a6eae61af6.js" crossorigin="anonymous"></script>
     
 </head>
@@ -59,8 +59,8 @@
                     
                 </div>
                 <form>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
+                    <div class="unit-row row">
+                        <div class="col-md-5 form-group">
                             <label for="selectIndustry">Unit </label><label style="color: brown;">  &nbsp;*</label>
                             <select class="form-control" id="selectUnit">
                             <option>Branch Conduct and Compliance Monitoring</option>
@@ -74,9 +74,7 @@
                             <option>Business Compliance</option>
                             </select>
                         </div> 
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3">
+                        <div class="col-md-4">
                             <div class="form-group">
                                 <label for="selectIndustry"> Activity Type </label><label style="color: brown;">  &nbsp;*</label>
                                 <select class="form-control" id="selectUnit">
@@ -88,78 +86,42 @@
                                 </select>
                             </div> 
                         </div>
-                        <div class="col-md-2 form-group">
-                            <label for="selectmonth">Activity Date</label><label style="color: brown;">  &nbsp;*</label>
-                            <select class="form-control" id="selectday">
-                                <option>Day</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>6</option>
-                                <option>7</option>
-                                <option>8</option>
-                                <option>9</option>
-                                <option>10</option>
-                                <option>11</option>
-                                <option>12</option>
-                                <option>13</option>
-                                <option>14</option>
-                                <option>15</option>
-                            </select>
-                        </div>
-                        <div class="col-md-2 form-group">
-                            <label for="activitymonth">&emsp;</label>
-                            <select class="form-control" id="selectmonth">
-                                <option>Month</option>
-                                <option>January</option>
-                                <option>February</option>
-                                <option>March</option>
-                                <option>April</option>
-                                <option>May</option>
-                                <option>June</option>
-                                <option>July</option>
-                                <option>August</option>
-                                <option>September</option>
-                                <option>October</option>
-                                <option>November</option>
-                                <option>December</option>
-                            </select>
-                        </div>
-                        <div class="col-md-2 form-group">
-                            <label for="reportyear">&emsp;</label>
-                        <select class="form-control" id="year">
-                            <option>Year</option>
-                            <option>2020</option>
-                            <option>2021</option>
-                            <option>2022</option>
-                        </select>
+                        <div class="col-md-3">
+                            <label for="selectdate">Activity Date</label><label style="color: brown;">  &nbsp;*</label>
+                            <div id="activityDate" class="input-group input-daterange">
+                                <input type="text" class="form-control" value="Select Date"> 
+                            </div>
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-md-6 form-group">
+                        <div class="col-md-12 form-group">
                             <label for="observationText">Observation </label><label style="color: brown;">  &nbsp;*</label>
                             <textarea class="form-control" id="observationText" rows="2"></textarea>
-                        </div>
-                        <div class="col-md-6 form-group">
+                        </div>                         
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 form-group">
                             <label for="descriptonText">Description </label><label style="color: brown;">  &nbsp;*</label>
                             <textarea class="form-control" id="descriptionText" rows="2"></textarea>
-                        </div>                          
+                        </div> 
                     </div>    
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <label for="actionText">Action Taken </label><label style="color: brown;">  &nbsp;*</label>
                             <textarea class="form-control" id="actionText" rows="1"></textarea>
                         </div>
-                        <div class="col-md-6 form-group">
+                        <div class="col-md-3 form-group">
                             <label for="descriptonText">Status </label><label style="color: brown;">  &nbsp;*</label>
                             <select class="form-control" id="year">
                                 <option>Resolved</option>
                                 <option>Unresolved</option>
-                                <option>No Action</option>                                
+                                <option>No Action</option>                            
                             </select>
-                        </div>                          
+                        </div> 
+                        <div class="col-md-3 form-group">
+                            <label for="FormControlFile">Attach File</label>
+                            <input type="file" class="form-control-file" id="FormControlFile">
+                        </div>                         
                     </div>    
                     <div class="button-group">
                         <a class="btn btn-big btn-primary" href="#" >Save For Later</a>
@@ -169,11 +131,6 @@
             <div class="button-group">
                 <a class="btn btn-big btn-primary" href="C:\Users\NEDUM\Desktop\TECH_ACADEMY\ACTIVITY_PORTAL\successfullog.html" >Submit</a>
             </div>    
-                               
-                            
-                        
-            
-
         </div>
         <!-- // main body ends -->
 
@@ -227,6 +184,15 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"  integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" integrity="sha256-bqVeqGdJ7h/lYPq6xrPv/YGzMEb6dNxlfiTUHSgRCp8=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#activityDate').datepicker({
+                format: "dd/mm/yyyy",
+                autoclose: true
+            })
+        })
     </script>
     
     
